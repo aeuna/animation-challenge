@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/animation-challenge/static/js/main.d2ca5a6e.js",
+    "index.html": "/animation-challenge/index.html",
+    "main.d2ca5a6e.js.map": "/animation-challenge/static/js/main.d2ca5a6e.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d2ca5a6e.js"
+  ]
+}
