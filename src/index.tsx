@@ -61,7 +61,6 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   color:black;
   line-height: 1.2;
-  background:linear-gradient(135deg,#778beb,#546de5);
 }
 a {
   text-decoration:none;
