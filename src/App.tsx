@@ -18,20 +18,25 @@ const Box = styled(motion.div)`
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
 `;
 
+const myVars = {
+  start: { scale: 0 },
+  end: {
+    rotate: 180,
+    scale: 1,
+    transition: {
+      delay: 0.5,
+      type: 'spring',
+      stiffness: 200,
+      damping: 5,
+      bounce: 0.1,
+    },
+  },
+};
+
 function App() {
   return (
     <Wrapper>
-      <Box
-        initial={{ scale: 0 }} // 초기 상태
-        animate={{ rotate: 180, scale: 1 }} // 최종 상태
-        transition={{
-          delay: 0.5,
-          type: 'spring',
-          stiffness: 200, // 약간 뻣뻣하게
-          damping: 5, // 뛰는 정도 (반동력) 0에 가까울수록 저항이 없음.
-          bounce: 0.1,
-        }}
-      />
+      <Box variants={myVars} initial="start" animate="end" />
     </Wrapper>
   );
 }
